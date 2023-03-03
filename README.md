@@ -3,6 +3,7 @@
 
 ### Functionalities  
 
+- [X] Addition
 - [X] Visualization
 - [X] Edition
 - [X] Exclusion
@@ -31,3 +32,7 @@ python app.py
 > POST /change/{id}
 - Change data for a specific user
 - The username and password fields must be sent in formdata format, indicating the new username and password
+
+> POST /add
+- Create a new user
+- The username and password fields must be sent in formdata format, indicating the username password
