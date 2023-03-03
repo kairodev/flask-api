@@ -7,7 +7,7 @@
 - [X] Edition
 - [X] Exclusion
 
-# Installation
+### Installation
 
 ```python
 pip install flask
@@ -15,7 +15,7 @@ pip install pandas
 python app.py
 ```
 
-# Routes
+### Routes
 > GET /data
 - list all users
 
