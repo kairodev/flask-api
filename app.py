@@ -33,6 +33,13 @@ def change(id):
     password = request.form.get('password')
     return changeUser(id, username, password)
 
+# ROTA - Adicionar usuário
+@app.route('/add', methods=['POST'])
+def add():
+    username = request.form.get('username')
+    password = request.form.get('password')
+    return addUser(username, password)
+
 if __name__ == '__main__':
 
     createData()

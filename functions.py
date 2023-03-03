@@ -127,3 +127,22 @@ def changeUser(id, username, password):
 
         return json.dumps({"message": "Error"})
 
+# Criar usuário
+def addUser(username, password):
+
+    try:
+
+        connection = sqlite3.connect('data') 
+
+        cursor = connection.cursor()  
+        
+        cursor.execute(f'''INSERT INTO users (user_name, user_password) VALUES ('{username}', '{password}')''')
+        
+        connection.commit()
+
+        return json.dumps({"message": "OK"})
+
+    except Exception as e:
+        print(e)
+
+        return json.dumps({"message": "Error"})
